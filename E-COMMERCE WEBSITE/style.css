@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* font family for all contains of the page - copy "CSS rules to specify families" from google fonts */
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+
+nav ul{
+    display: inline-block;
+    list-style-type: none;  /* to remove the bullet point of unordered list */
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px; /* takes space inbetween the elements */
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+
+p{
+    color: #555; /* color of all paragraphs */
+}
+
+/* entire page */
+.container{
+    max-width: 1300px; /* entire width, this is the maximum width */
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+    /* padding: 0px 25px 0px 25px ;  */ /* same as above, padding-left and padding-right */
+    /* padding: top right bottom left; */
+
+}
+
+/* for row div under the nav bar */
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* for col-2 */
+.col-2{
+    flex-basis: 50%; /* each column takes 50% of space */
+    min-width: 300px;
+
+}
+
+/* for image1 in col-2 */
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+
+/* for h1 tag in col-2 */
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0; /* margin for top and bottom */
+
+}
+
+/* for button(Explore Now) in col-2*/
+.btn{
+    display: inline-block;
+    background: #ff523b;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: background 0.5s;
+
+}
+
+.btn:hover{
+    background: #563434;
+}
+
+/* for background color, create a div above the container */
+.header{
+    background: radial-gradient(#fff,#ffd6d6);
+
+}
+
+/* to add space from top and bottom */
+.header .row{
+    margin-top: 70px; /* from margin top 70px space is added */
+
+}
+
+
+/* featured categories */
+.categories{
+    margin: 70px 0;
+
+}
+
+.col-3{
+    flex-basis: 30%;
+    /* all images occupy 30% of space */
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+
+
+.col-3 img{
+    width: 100%;  /* three images where attached next to next, after giving 100%, inbetween them space was formed */
+}
+
+/* the images took full width,to add space from left and right small-container was created and padding left and right is done */
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+/* featured product */
+/* within small-container div,row div is created, within row div col-4 div is created */
+.col-4{
+    flex-basis: 25%; /* each image takes 25% of space */
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+
+    /* for hover effect */
+    transition: transform 0.5s;
+}
+
+.col-4 img{
+    width: 100%;
+}
+
+/* title - featured product */
+.title{
+    text-align: center;
+    margin: o auto 80px; /* 80px from bottom */
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+
+
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0; /* line will be at bottom */
+    left: 50%;
+    transform: translateX(-50%); /* so that it will be in center from x axis */
+}
+
+/* product name */
+h4{
+    color: #555;
+    font-weight: normal;
+}
+
+/* product price */
+.col-4 p{
+    font-size: 14px;
+}
+
+/* rating, fa for icon */
+.rating .bi{
+    color: #ff523b;
+
+}
+
+/* hover effect on col-4 images */
+.col-4:hover{
+    transform: translateY(-5px);
+    /* moves 5px in y direction */
+
+}
