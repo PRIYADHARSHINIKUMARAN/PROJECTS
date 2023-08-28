@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Branded Cart - E-Commerce Website</title>
+    <title>All Products - Branded Cart</title>
     
     <!-- to connect the stylesheet -->
     <link rel="stylesheet" href="style.css">
@@ -21,13 +21,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-<div class="header">
+
+
 <div class="container">
     <div class="navbar">
         <div class="logo">
-
             <a href="index.html"><img src="logo.jpeg" width="125px"></a>
-            
         </div>
         <nav>
             <ul id="MenuItems">
@@ -40,65 +39,34 @@
         </nav>
 
         <!-- to add cart icon in nav bar after account -->
-
         <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
-        
         <img src="menu.png" class="menu-icon" onclick="menutoggle()"> <!-- whenever we click the menu-icon, menutoggle function is called -->
     </div>
 
     <!-- create a div below nav bar named as row-->
-    <div class="row">
-        <!--  this row contaims two column -->
-        <!-- so create two divs with anme col-2 -->
-        <div class="col-2">
-            <h1>Give Your Workout</br>A New Style!</h1>
-            <p>Success isn't always about greatness. It's about consistency. Consistent</br> hard work gains success.Greatness will come</p>
-            <!-- create a button -->
-            <a href="" class="btn">Explore Now &#8594;</a>
-        </div>
-
-        <div class="col-2">
-            <img src="col-2-image1.jpg">
-        </div>
-        
-    </div>
+    
 </div>
-</div>
-
-<!-- Featured categories -->
-
-<!-- create a div categories -->
-<div class="categories">
-    <!-- create a div small-container,because the images(col-3) took full width ,in order to get the space from left and right side -->
-    <div class="small-container">
-        <!-- within small-categories create a div row -->
-    <div class="row">
-        <!-- within div row create 3 columns divs named col-3 -->
-        <div class="col-3">
-            <img src="col-3-image1.jpg">
-        </div>
-        
-        <div class="col-3">
-            <img src="col-3-image2.jpg">
-        </div>
-        
-        <div class="col-3">
-            <img src="col-3-image3.jpg">
-        </div>
-
-    </div>
-    </div>  
-</div>
-
-
-
-
-<!-- 1st section -->
-
-<!-- featured products -->
 
 <div class="small-container">
-    <h2 class="title">Featured Products</h2>
+
+    <div class="row row-2">
+        <div class="col-2">
+            <h2>All Products</h2>
+        </div>
+        
+        <div class="col-2">
+            <select> <!-- for drop down option -->
+                <option>Default Sorting</option>
+                <option>Sort by Price</option>
+                <option>Sort by Popularity</option>
+                <option>Sort by Rating</option>
+                <option>Sort by Sales</option>
+            </select>
+
+        </div>
+        
+    </div>
+
     <div class="row">
         <div class="col-4">
             <img src="col-4-image1.jpg">
@@ -176,19 +144,87 @@
 
         </div>
     </div>
+    <div class="row">
+        <div class="col-4">
+            <img src="col-4-image5.jpg">
+            <h4>Cotton Peech sharara Suit</h4>
 
+            <!-- for rating create a div named rating -->
+            <div class="rating">
 
+                <!-- style for full star -->
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
 
+                <!-- style for empty star -->
+                <i class="bi bi-star"></i>
 
-    <!-- 2nd section -->
+            </div>
 
-    <!-- Latest products -->
+            <p>₹1,599</p>
 
-    <h2 class="title">Latest Products</h2>
+        </div>
+        <div class="col-4">
+            <img src="col-4-image6.jpg">
+            <h4>Rose Gold Love Square Mangalsutra</h4>
+
+            <div class="rating">
+
+                <!-- style for full star -->
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+
+                <!-- style for half star -->
+                <i class="bi bi-star-half"></i>
+
+            </div>
+
+            <p>₹2,099</p>
+
+        </div>
+        <div class="col-4">
+            <img src="col-4-image7.jpg">
+            <h4>HP 250 G9 Notebook PC</h4>
+
+            <!-- for rating create a div named rating -->
+            <div class="rating">
+                <!-- copy and paste the star rating link from bootstrap-icons-star -->
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+
+            </div>
+
+            <p>₹44,299</p>
+
+        </div>
+        <div class="col-4">
+            <img src="col-4-image8.jpg">
+            <h4>Hornbull Wallet for Men</h4>
+
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+
+            </div>
+
+            <p>₹3,299</p>
+
+        </div>
+     
+    </div>
     <div class="row">
         <div class="col-4">
             <a href="Product-details.html"><img src="col-4-image5.jpg"></a>
-            
             <h4>Cotton Peech sharara Suit</h4>
 
             <!-- for rating create a div named rating -->
@@ -265,196 +301,16 @@
      
     </div>
 
-    <div class="row">
-        <div class="col-4">
-            <img src="col-4-image9.jpg">
-            <h4>Shining Diva Fashion</h4>
-
-            <!-- for rating create a div named rating -->
-            <div class="rating">
-
-                <!-- style for full star -->
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-
-                <!-- style for empty star -->
-                <i class="bi bi-star"></i>
-
-            </div>
-
-            <p>₹899</p>
-
-        </div>
-        <div class="col-4">
-            <img src="col-4-image10.jpg">
-            <h4>Xtore® Mobile Phone & Tablet Holder</h4>
-
-            <!-- for rating create a div named rating -->
-            <div class="rating">
-
-                <!-- style for full star -->
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-
-                <!-- style for empty star -->
-                <i class="bi bi-star"></i>
-
-            </div>
-
-            <p>₹14,999</p>
-
-        </div>
-        <div class="col-4">
-            <img src="col-4-image11.jpg">
-            <h4>Kuber Industries Multi-Purpose Compact Desk Storage</h4>
-
-            <!-- for rating create a div named rating -->
-            <div class="rating">
-
-                <!-- style for full star -->
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-
-                <!-- style for empty star -->
-                <i class="bi bi-star"></i>
-
-            </div>
-
-            <p>₹498</p>
-
-        </div>
-        <div class="col-4">
-            <img src="col-4-image12.jpg">
-            <h4>Beclina Handbag</h4>
-
-            <!-- for rating create a div named rating -->
-            <div class="rating">
-
-                <!-- style for full star -->
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-                <i class="bi bi-star-fill"></i>
-
-                <!-- style for empty star -->
-                <i class="bi bi-star"></i>
-
-            </div>
-
-            <p>₹1,689</p>
-
-        </div>
+    <div class="page-btn">
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>&#8594;</span>
     </div>
-</div>
 
 
 
-
-<!-- 3rd section -->
-
-<!-- offer -->
-
-<div class="offer">
-    <div class="small-container">
-        <div class="row">
-            <div class="col-2">
-                <img src="offer-image1.jpg" class="offer-img" width="400px">
-            </div>
-            <div class="col-2">
-                <p>Exclusively Available on Branded Cart</p>
-                <h1>Sonata Smart Band 7</h1>
-                <small>SONATA gold Fitness Band | Activity Tracker| AMOLED Color Display, waterproof 11 Sports Mode, Heart Rate, Health Tracking Smart Band Wireless Sweatproof Blood Pressure| Heart Rate Sensor | Step Tracking All Android & iOS Device1 </small></br>
-                <a href="" class="btn">Buy Now &#8594;</a> <!-- button and arrow icon -->
-
-            </div>
-        </div>
-    </div>
-</div>
-    
-
-<!-- Testimonial -->
-
-
-<div class="testimonial">
-    <div class="small-container">
-        <div class="row">
-            <div class="col-3">
-                <i class="bi bi-quote"></i> <!-- bootstrap code for quote symbol -->
-                <p>cdctfyvubhvcezwrsxct fyguhijoWAEzsdcgvbhn ijrewq azerxctfbuh njmkoijuhygtf rdeswq azexrdfgvbhnj</p>
-                <div class="rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-    
-                </div>
-                <img src="user-image1.jpg">
-                <h3>Sean Parker</h3>
-
-            </div>
-            <div class="col-3">
-                <i class="bi bi-quote"></i>
-                <p>cdctfyvubhvcezwrsxct fyguhijoWAEzsdcgvbhn ijrewq azerxctfbuh njmkoijuhygtf rdeswq azexrdfgvbhnj</p>
-                <div class="rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-    
-                </div>
-                <img src="user-image2.jpg">
-                <h3>Sean Parker</h3>
-
-            </div>
-            <div class="col-3">
-                <i class="bi bi-quote"></i>
-                <p>cdctfyvubhvcezwrsxct fyguhijoWAEzsdcgvbhn ijrewq azerxctfbuh njmkoijuhygtf rdeswq azexrdfgvbhnj</p>
-                <div class="rating">
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star-fill"></i>
-                    <i class="bi bi-star"></i>
-    
-                </div>
-                <img src="user-image3.jpg">
-                <h3>Sean Parker</h3>
-
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<!-- brands -->
-<div class="brands">
-    <div class="small-container">
-        <div class="row">
-            <div class="col-5">
-                <img src="col-5-image1.jpg">
-            </div>
-            <div class="col-5">
-                <img src="col-5-image2.png">
-            </div>
-            <div class="col-5">
-                <img src="col-5-image3.png">
-            </div>
-            <div class="col-5">
-                <img src="col-5-image4.png">
-            </div>
-            <div class="col-5">
-                <img src="col-5-image5.png">
-            </div>
-        </div>
-    </div>
 </div>
 
 
@@ -501,11 +357,7 @@
 </div>
 
 
-
-
 <!-- js for toggle menu -->
-
-
 <script>
     var MenuItems=document.getElementById("MenuItems");
     MenuItems.style.maxHeight="0px";

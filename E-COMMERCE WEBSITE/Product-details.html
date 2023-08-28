@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products - Branded Cart</title>
+    
+    <!-- to connect the stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    
+    <!--cdn link of icons from bootstrap  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <!-- to add google fonts -->
+    <!-- copy the link from google fonts after choosing all the required fonts and paste here -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+<div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpeg" width="125px"></a>
+        </div>
+        <nav>
+            <ul id="MenuItems">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="">Contact</a></li>
+                <li><a href="account.html">Account</a></li>
+            </ul>
+        </nav>
+
+        <!-- to add cart icon in nav bar after account -->
+        <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+        <!-- to add menu icon -->
+        <img src="menu.png" class="menu-icon" onclick="menutoggle()"> <!-- whenever we click the menu-icon, menutoggle function is called -->
+        
+    </div>
+</div>
+
+
+<!-- Single Product Details -->
+
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="col-4-image5.jpg" width="100%" id="ProductImg">
+            <!-- <a href="Product-details.html"><img src="col-4-image5.jpg" width="100%" id="ProductImg"></a> -->
+
+            <!-- images for Product gallery -- different views of thge product-->
+
+            <div class="small-img-row">
+                <div class="small-img-col">
+                    <img src="col-4-image51.jpg" width="100%" class="small-img">
+
+                </div>
+                <div class="small-img-col">
+                    <img src="col-4-image52.jpg" width="100%" class="small-img">
+
+                </div>
+                <div class="small-img-col">
+                    <img src="col-4-image53.jpg" width="100%" class="small-img">
+
+                </div>
+                <div class="small-img-col">
+                    <img src="col-4-image54.jpg" width="100%" class="small-img">
+
+                </div>
+            </div>
+
+          
+
+        </div>
+        <div class="col-2">
+            <p>Home / Cotton Peech sharara Suit</p>
+            <h1>Georgette Lace Work Cotton Peach Sharara Suit</h1>
+            <h4>₹1,599</h4>
+
+            <!-- for sizes of product -->
+            <select>
+                <option>Select Size</option>
+                <option>S</option>
+                <option>M</option>
+                <option>L</option>
+                <option>XL</option>
+                <option>XXL</option>
+            </select>
+
+            <!-- for quantity of products -->
+            <input type="number" value="1">  <!-- here default quantity is 1 -->
+
+            <a href="" class="btn">Add To Cart</a>
+
+            <h3>Product Details  <i class="bi bi-indent"></i></h3>
+            <br>
+            <p>Light Peach Sharara Suit is Georgette Top and Bottom with Chiffon Dupatta, having Lace Work. 
+                This Sharara Suit is Birthday Party, Festival wear. 
+                This attire can be made any size and any color as per your requirement.</p>
+        </div>
+    </div>
+</div>
+
+
+<!-- title -->
+
+<div class="small-container">
+    <div class="row row-2">
+
+        <div class="col-2">
+            <h2>Related Products</h2>
+        </div>
+
+        <div class="col-2">
+            <p>View More</p>
+
+        </div>
+        
+            
+        
+    </div>
+</div>
+
+
+
+
+<!-- products -->
+
+<div class="small-container">
+
+    <div class="row">
+        <div class="col-4">
+            <a href="Product-details.html"><img src="col-4-image5.jpg"></a>
+            <h4>Cotton Peech sharara Suit</h4>
+
+            <!-- for rating create a div named rating -->
+            <div class="rating">
+
+                <!-- style for full star -->
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+
+                <!-- style for empty star -->
+                <i class="bi bi-star"></i>
+
+            </div>
+
+            <p>₹1,599</p>
+
+        </div>
+        <div class="col-4">
+            <img src="col-4-image6.jpg">
+            <h4>Rose Gold Love Square Mangalsutra</h4>
+
+            <div class="rating">
+
+                <!-- style for full star -->
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+
+                <!-- style for half star -->
+                <i class="bi bi-star-half"></i>
+
+            </div>
+
+            <p>₹2,099</p>
+
+        </div>
+        <div class="col-4">
+            <img src="col-4-image7.jpg">
+            <h4>HP 250 G9 Notebook PC</h4>
+
+            <!-- for rating create a div named rating -->
+            <div class="rating">
+                <!-- copy and paste the star rating link from bootstrap-icons-star -->
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+
+            </div>
+
+            <p>₹44,299</p>
+
+        </div>
+        <div class="col-4">
+            <img src="col-4-image8.jpg">
+            <h4>Hornbull Wallet for Men</h4>
+
+            <div class="rating">
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star-fill"></i>
+                <i class="bi bi-star"></i>
+
+            </div>
+
+            <p>₹3,299</p>
+
+        </div>
+     
+    </div>
+
+  
+
+
+
+</div>
+
+
+<!-- footer -->
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS Mobile Phones</p>
+                <div class="app-logo">
+                    <img src="playstore.png">
+                    <img src="appstore.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="logo.jpeg">
+                <p>Our purpose is to Sustainably make the Pleasure and Benefits of Products Accesible to the many..</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr><!-- horizontal line -->
+        <!-- <p class="copyright">Copyright 2023 - Easy Tutorials</p> -->
+    </div>
+</div>
+
+
+<!-- js for toggle menu -->
+<script>
+    var MenuItems=document.getElementById("MenuItems");
+    MenuItems.style.maxHeight="0px";
+    function menutoggle(){
+        if(MenuItems.style.maxHeight=="0px")
+        {
+            MenuItems.style.maxHeight="200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight="0px";
+        }
+    }
+</script>
+
+<!-- js for product gallery-->
+
+<script>
+    var ProductImg=document.getElementById("ProductImg");
+    var SmallImg=document.getElementsByClassName("small-img");
+
+
+SmallImg[0].onclick=function(){ // this is for first small image with index 0
+    ProductImg.src=SmallImg[0].src;
+}
+SmallImg[1].onclick=function(){ // this is for second small image with index 1
+    ProductImg.src=SmallImg[1].src;
+}
+SmallImg[2].onclick=function(){ // this is for third small image with index 2
+    ProductImg.src=SmallImg[2].src;
+}
+SmallImg[3].onclick=function(){ // this is for fourth small image with index 3
+    ProductImg.src=SmallImg[3].src;
+}
+
+
+</script>
+
+</body>
+</html>
