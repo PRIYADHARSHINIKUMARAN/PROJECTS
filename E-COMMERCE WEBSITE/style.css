@@ -50,10 +50,11 @@ p{
 
 /* for row div under the nav bar */
 .row{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    /* display: flex; */
+    width: 100vw;
+    /* align-items: center; */
+    flex-direction:row ;
+    justify-content: space-evenly;
     /* background-color: #ff523b; */
 }
 
@@ -160,9 +161,9 @@ p{
 
 .col-4 img{
     /* width: 100%; */
-    width: 400px;
-    height: 400px;
-    margin: 20px;
+    width: 150px;
+    height: 150px;
+    margin: 5px;
 }
 
 /* title - featured product */

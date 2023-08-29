@@ -1,0 +1,12 @@
+.content{
+   
+    display: flex;
+    flex-direction: row;
+}
+
+.content h4{
+    font-size: 5px;
+}
+h4{
+    color: red;
+}
